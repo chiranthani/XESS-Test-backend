@@ -1,6 +1,6 @@
 > Laravel with RESTAPI
 
-> ## 🚀 Installation
+> ## Installation
 
 ### 1. Clone the repository
 
@@ -10,3 +10,6 @@ cd XESS-Test-backend
 composer install
 cp .env.example .env
 php artisan key:generate
+
+
+// API testing - get the API postman collection and import to postman and run
