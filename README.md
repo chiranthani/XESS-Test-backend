@@ -11,5 +11,7 @@ composer install
 cp .env.example .env
 php artisan key:generate
 
+```
 
-// API testing - get the API postman collection and import to postman and run
+// API testing - get the API postman collection and import to Postman and run
+![image](https://github.com/user-attachments/assets/17b6bbcf-5c29-46a3-834d-e016ec18119f)
