@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "596ea9e0-cfda-4775-aa55-971ae9c183d9",
+		"name": "XESS-TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11040807",
+		"_collection_link": "https://bold-station-52964.postman.co/workspace/Test~55422b0a-d61c-4dc9-8839-124ec42d1b98/collection/11040807-596ea9e0-cfda-4775-aa55-971ae9c183d9?action=share&source=collection_link&creator=11040807"
+	},
+	"item": [
+		{
+			"name": "Create Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ABC Project\",\r\n    \"assumed_hours\":\"40\",\r\n    \"selected_team_members\":[1,2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Project cost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/{{project_id}}/cost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"{{project_id}}",
+						"cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get staff",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/staff",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get office expenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/office-expense",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"office-expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Project List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/list",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
